@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Calculadora de IMC</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> <!-- Link para o arquivo JavaScript (defer para carregamento assíncrono) -->
+</head>
+<body>
+    <noscript>Seu navegador está com o JavaScript desabilitado! </noscript> <!-- Mensagem para navegadores sem suporte a JavaScript -->
+
+    <h1 id="titulo">Calculadora de IMC</h1> 
+
+    <form action="." method="get"> <!-- Formulário para entrada de dados -->
+        <div class="item">
+            <label for="peso">Peso: <!-- Rótulo para o campo de peso -->
+                <input type="text" id="peso_inp"> <!-- Campo de entrada para o peso -->
+            </label>
+        </div>
+
+        <div class="item">
+            <label for="altura">Altura: <!-- Rótulo para o campo de altura -->
+                <input type="text" id="altura_inp"> <!-- Campo de entrada para a altura -->
+            </label>
+        </div>
+    </form>
+
+    <div class="resultado"> <!-- Divisão para exibir o resultado -->
+        <button id="calculo" class="calculo">Calcular</button> <!-- Botão para calcular o IMC -->
+    </div>
+
+    <div id="resultado" class="resultado"></div> <!-- Divisão para exibir o resultado do cálculo do IMC -->
+
+</body>
+</html>
